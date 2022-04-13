@@ -14,16 +14,20 @@ class Area1 {
     {
         length=l;
         breadth=b;
-        System.out.println("This a Paramaterized Constructor");
+        System.out.println("This a Parameterized Constructor");
         int area = length*breadth;
         System.out.println("Area of Rectangle is : "+area);
     }
 }
+
 public class Constructor_Overloading {
     public static void main(String[] args) {
 
        // System.out.println("\nDefault Constructor values : \nLength : 2 and Breadth : 5");
         Area1 A1=new Area1();
         Area1 A2=new Area1(5,10);
+
+       // A1.show();
+     //   A2.show(3,5);
     }
 }
