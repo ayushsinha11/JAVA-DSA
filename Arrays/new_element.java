@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class new_element {
     public static void main(String[] args) {
         Scanner in =new Scanner(System.in);
+        System.out.print("Enter the size of matrix :");
         int n=in.nextInt();
         int [] a=new int[n];
         int[] b=new int[n+1];
