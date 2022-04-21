@@ -1,21 +1,21 @@
-package Binary_Search;
+package LeetCode;
 import java.util.Scanner;
-public class floor_problem {
+public class smallest_letter {
     public static void main(String[] args) {
         Scanner in =new Scanner(System.in);
         System.out.print("Enter the size of an array :");
         int n=in.nextInt();
-        int[]arr=new int[n];
-        System.out.println("Enter the elements into the array :");
+        char[]arr=new char[n];
+        System.out.println("Enter the characters into the array :");
         for (int i = 0; i <n ; i++) {
-            arr[i]=in.nextInt();
+            arr[i]=in.next().charAt(0);
         }
         System.out.print("Enter the element to be searched :");
-        int target =in.nextInt();
-        int ans=search(arr,target);
+        char target =in.next().charAt(0);
+        char ans=search(arr,target);
         System.out.println(ans);
     }
-    static int search(int[] arr,int target){
+    static char search(char[] arr,int target){
         int start=0;
         int end= arr.length-1;
 
@@ -24,13 +24,11 @@ public class floor_problem {
             if(target<arr[mid]){
                 end=mid-1;
             }
-            else if(target>arr[mid]){
+            else {
                 start=mid+1;
             }
-            else {
-                return mid;
-            }
+
         }
-        return arr[end];
+        return arr[start % arr.length];
     }
 }
