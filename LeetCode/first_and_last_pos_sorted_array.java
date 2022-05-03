@@ -27,7 +27,7 @@ int[] ans=search(arr,target);
             else {
                 start = mid + 1;
             }
-                if (target==arr[mid])
+                if (target==arr[mid]) // agar mera targer mid k equal aa gya to index ko mid se update kr denge.
                 {
                     index=mid;
                 }

@@ -1,5 +1,5 @@
 package Searching;
-
+//Wrong   code dont refer to this.
 public class max_ele_array {
     public static void main(String[] args) {
         int[] arr={10 ,11,12 ,13,9 ,8 ,7 ,3,1};
