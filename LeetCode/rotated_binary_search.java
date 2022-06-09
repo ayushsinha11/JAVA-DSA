@@ -18,7 +18,7 @@ public class rotated_binary_search {
                 start=mid+1;
             else
                 end=mid;
-        }
+        }//at last the start will point to the smallest element.
         //this while loop will break when the start will point to the smallest number.hence the pivot
         //So the starting point of our array, if it is sorted will be left.
          int begin=start;//contains the value of lowest element i.e pivot,for searching in right side
